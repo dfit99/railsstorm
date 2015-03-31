@@ -8,8 +8,7 @@ def self.search(params)
     search_types = "type_id LIKE ?"
     container = Array.new
     container << search_word << search_types
-
-    if(params[:conjunction] ==  "3") then
+    if(params[:conjuction] ==  "3") then
       query  = container.join(" or ") 
     else
       query  = container.join(" and ")

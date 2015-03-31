@@ -1,5 +1,5 @@
 class CreateItems < ActiveRecord::Migration
- # belongs_to :Type
+  belongs_to :Type
 
   def change
     create_table :items do |t|
